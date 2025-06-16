@@ -4,10 +4,10 @@ const app = express();
 
 app.use(express.json());
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to my docker image lab with git action beanstalk works" });
+    res.json({ message: "Welcome to my docker image lab with git action beanstalk works HELLO" });
 });
 
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}.`);
+    console.log(`Server is running on port ${PORT}.`);
 });
